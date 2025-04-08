@@ -1,0 +1,24 @@
+collections:
+  people:
+    output: true
+  partners:
+    output: true
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "bio"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "partners"
+    values:
+      layout: "bio"

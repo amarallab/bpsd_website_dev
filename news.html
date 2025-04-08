@@ -1,0 +1,19 @@
+---
+layout: news
+title: BP/SD News
+---
+
+<!-- Posts -->
+<ul>
+    {% for post in site.posts %}
+        <section class="col-6 col-12-narrower">
+            <div class="box post">
+                <a href="{{ post.url }}" class="image left"><img src="/images/pic01.jpg" alt="" /></a>
+                <div class="inner">
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.author }}<br>{{ post.date | date_to_string }}<br>{{ post.excerpt }}</p>
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+</ul>

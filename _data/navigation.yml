@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: About BP/SD
+  link: /about.html
+- name: People
+  link: /people.html
+- name: Partners
+  link: /partners.html
+- name: Software Tools
+  link: /software.html
+- name: News + Publications
+  link: /news.html
+- name: Contact us
+  link: /contact.html

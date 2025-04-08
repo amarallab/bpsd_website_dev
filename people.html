@@ -1,0 +1,16 @@
+---
+layout: news
+title: BP/SD People
+---
+
+<ul>
+  {% for person in site.people %}
+      <section class="col-6 col-12-narrower">
+            <a href="{{ person.url }}" class="image left"><img src="/images/pic01.jpg" alt="" /></a>
+            <div class="inner">
+                <h3><a href="{{ person.url }}">{{ person.name }}</a></h3>
+                <p>{{ person.position }}<br>{{ person.department }}<br>{{ person.institution }}</p>
+            </div>
+      </section>
+  {% endfor %}
+</ul>

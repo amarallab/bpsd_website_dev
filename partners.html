@@ -1,0 +1,16 @@
+---
+layout: news
+title: BP/SD Partners
+---
+
+<ul>
+  {% for partner in site.partners %}
+      <section class="col-6 col-12-narrower">
+            <a href="{{ partner.url }}" class="image left"><img src="/images/pic01.jpg" alt="" /></a>
+            <div class="inner">
+                <h3><a href="{{ partner.url }}">{{ partner.name }}</a></h3>
+                <p>{{ partner.position }}<br>{{ partner.institution }}</p>
+            </div>
+      </section>
+  {% endfor %}
+</ul>
